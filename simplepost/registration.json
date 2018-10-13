@@ -1,0 +1,26 @@
+{
+  "registrationRequest": [
+    {
+      "fccId": "abc123",
+      "cbsdCategory": "A",
+      "callsign": "CB987",
+      "userId": "Phil",
+      "airInterface":{
+        "radioTechnology":"BMW"
+      },
+      "installationParam":{
+        "latitude":123.123,
+        "longitude":-12.12,
+        "height":10,
+        "heightType":"AWM",
+        "indoorDeployment": true,
+        "antennaAzimuth":111,
+        "antennaDowntilt":45,
+        "antennaGain": 100,
+        "antennaBeamwidth":180
+      },
+      "measCapability": [
+        "RECEIVED_POWER_WITHOUT_GRANT"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+mongodb-main:
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./mongodb/data:/data/db
+    ports:
+      - 27027:27017
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs0", "--journal","--dbpath","/data/db","--smallfiles" ]
+
+mongodb-sub1:
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./mongodb2/data:/data/db
+    ports:
+      - 27028:27017
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs1", "--journal","--dbpath","/data/db","--smallfiles" ]
+
+mongodb-sub2:
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./mongodb3/data:/data/db
+    ports:
+      - 27029:27017
+    entrypoint: [ "/usr/bin/mongod", "--replSet", "rs2", "--journal","--dbpath","/data/db","--smallfiles" ]

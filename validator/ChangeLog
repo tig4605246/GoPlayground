@@ -1,0 +1,22 @@
+2017/12/14:
+
+2017/12/13:
+
+    Update:
+
+        [x]testing package: assert package
+            test function made with assert package
+
+        [x]multiple output with map
+            Now it'll output all errors with map[string]string
+
+        [x]recursive struct , Can it solve it?
+
+        [x]Can struct detect if a value is empty or not
+            It recognize empty value as true
+
+        [x]Empty must be concerned
+
+    To-do:
+
+        Accept array as input for validation

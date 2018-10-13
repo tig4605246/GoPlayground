@@ -1,0 +1,27 @@
+godoc servey
+
+Overview
+
+godoc can autogenerates documents from the comments of the source files
+
+It works on packages, not individual functions
+
+Syntax:
+
+Works like markdown
+
+Comments preceeding package definition will be the overview of the package
+
+Comments preceeding functions and constants will be descriptions of them
+
+// with nothing means change line
+
+two spaces means code area
+
+How to list bugs in godoc?
+
+    BUG(y): array won't work
+
+Make a server and allows query with godoc [package] -q
+
+    godoc -http=:6060 -index

@@ -1,0 +1,5 @@
+1. [ ] Regular expression
+2. [ ] struct validation
+3. [v] input improvement, input is not a map string string
+4. [v] return type : error array, 
+5. [v] validateInt validateFloat , include ranges
